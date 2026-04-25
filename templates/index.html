@@ -3,6 +3,7 @@
 <head>
     <title>EasyTranslate</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 <body>
 
@@ -14,12 +15,14 @@
 
     <div class="card">
 
-        <div class="icon">🌍✨</div>
+        <div class="logo">
+            🌍📝
+        </div>
 
         <h1 class="main-title">EasyTranslate</h1>
 
         <p class="tagline">
-            Translate • Connect • Understand 🌐
+            Translate • Connect • Understand 
         </p>
 
         <form method="POST">
@@ -39,7 +42,7 @@
 
         {% if translated_text %}
         <div class="result-box">
-            <h3>Translated Text 🌍</h3>
+            <h3>Translated Text🗒️</h3>
             <p>{{ translated_text }}</p>
         </div>
         {% endif %}
