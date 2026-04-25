@@ -2,7 +2,7 @@
 A simple AI-powered web application that translates text into multiple languages in real time.
 
 
-# 🚀 Features
+# Features
 * Translate text instantly
 * Supports multiple languages (English, Hindi, French, Spanish, German)
 * Clean and user-friendly UI
@@ -19,7 +19,7 @@ A simple AI-powered web application that translates text into multiple languages
 https://easytranslate-ai.onrender.com/
 
 
-# 📂 Project Structure
+# Project Structure
 ```
 translator-app-ai/
 │
