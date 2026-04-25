@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Translator App</title>
+    <title>EasyTranslate</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-<div class="container">
-    <h1>🌍 Translator App</h1>
+<div class="main-container">
 
-    <form method="POST">
-        
-        <textarea name="text" placeholder="Enter text to translate..." required></textarea>
+    <!-- Background Shapes -->
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
 
-        <select name="language">
-            <option value="hi">Hindi</option>
-            <option value="fr">French</option>
-            <option value="es">Spanish</option>
-            <option value="de">German</option>
-        </select>
+    <div class="card">
 
-        <button type="submit">Translate</button>
+        <div class="icon">🌍✨</div>
 
-    </form>
+        <h1 class="main-title">EasyTranslate</h1>
 
-    {% if translated_text %}
-    <div class="result">
-        <h3>Translated Text:</h3>
-        <p>{{ translated_text }}</p>
+        <p class="tagline">
+            Translate • Connect • Understand 🌐
+        </p>
+
+        <form method="POST">
+
+            <textarea name="text" placeholder="Enter text to translate..." required></textarea>
+
+            <select name="language">
+                <option value="hi">Hindi</option>
+                <option value="fr">French</option>
+                <option value="es">Spanish</option>
+                <option value="de">German</option>
+            </select>
+
+            <button type="submit">Translate ✨</button>
+
+        </form>
+
+        {% if translated_text %}
+        <div class="result-box">
+            <h3>Translated Text 🌍</h3>
+            <p>{{ translated_text }}</p>
+        </div>
+        {% endif %}
+
     </div>
-    {% endif %}
 
 </div>
 
